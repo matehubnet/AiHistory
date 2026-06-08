@@ -5,6 +5,7 @@ site_author: matehubnet
 
 repo_name: matehubnet/AiHistory
 repo_url: https://github.com/matehubnet/AiHistory
+edit_uri: edit/main/docs/
 
 copyright: CC BY 4.0
 
@@ -44,6 +45,7 @@ plugins:
       lang:
         - zh
         - en
+  - same-dir
 
 markdown_extensions:
   - admonition
@@ -68,55 +70,43 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/matehubnet/AiHistory
-  analytics:
-    feedback:
-      title: 这篇文章有帮助吗？
-      ratings:
-        - icon: material/thumb-up-outline
-          name: 有帮助
-          data: 1
-          note: 感谢反馈！
-        - icon: material/thumb-down-outline
-          name: 没帮助
-          data: 0
-          note: 感谢反馈，我们会持续改进。
 
 nav:
   - 首页: index.md
   - 第一部分·萌芽:
-    - ch01: chapters/ch01.md
-    - ch02: chapters/ch02.md
-    - ch03: chapters/ch03.md
+    - 第1章 机器能思考吗: chapters/ch01.md
+    - 第2章 感知机的局限与AI寒冬: chapters/ch02.md
+    - 第3章 被低估的早期思想: chapters/ch03.md
   - 第二部分·数据与统计:
-    - ch04: chapters/ch04.md
-    - ch05: chapters/ch05.md
-    - ch06: chapters/ch06.md
+    - 第4章 反向传播的时代: chapters/ch04.md
+    - 第5章 统计学习的黄金年代: chapters/ch05.md
+    - 第6章 深度学习的种子: chapters/ch06.md
   - 第三部分·深度学习爆发:
-    - ch07: chapters/ch07.md
-    - ch08: chapters/ch08.md
-    - ch09: chapters/ch09.md
-    - ch10: chapters/ch10.md
+    - 第7章 AlexNet时刻: chapters/ch07.md
+    - 第8章 CNN的进化: chapters/ch08.md
+    - 第9章 RNN、LSTM与注意力: chapters/ch09.md
+    - 第10章 GAN: chapters/ch10.md
   - 第四部分·Transformer与大模型:
-    - ch11: chapters/ch11.md
-    - ch12: chapters/ch12.md
-    - ch13: chapters/ch13.md
-    - ch14: chapters/ch14.md
+    - 第11章 Transformer的革命: chapters/ch11.md
+    - 第12章 从BERT到GPT: chapters/ch12.md
+    - 第13章 规模法则: chapters/ch13.md
+    - 第14章 对齐: chapters/ch14.md
   - 第五部分·大模型爆发与AGI:
-    - ch15: chapters/ch15.md
-    - ch16: chapters/ch16.md
-    - ch17: chapters/ch17.md
-    - ch18: chapters/ch18.md
+    - 第15章 ChatGPT时刻: chapters/ch15.md
+    - 第16章 推理与思维链: chapters/ch16.md
+    - 第17章 多模态与Agent: chapters/ch17.md
+    - 第18章 2025-2026最新格局: chapters/ch18.md
   - 第六部分·展望:
-    - ch19: chapters/ch19.md
-    - ch20: chapters/ch20.md
-    - ch21: chapters/ch21.md
+    - 第19章 尚未解决的问题: chapters/ch19.md
+    - 第20章 通向AGI的可能路径: chapters/ch20.md
+    - 第21章 AI与社会: chapters/ch21.md
   - 附录:
-    - 数学基础: appendix/apx_a_math.md
-    - 手写神经网络: appendix/apx_b_neural_net.md
-    - 手写Transformer: appendix/apx_c_transformer.md
-    - 论文索引: appendix/apx_d_papers.md
-    - 大事记年表: appendix/apx_e_timeline.md
-    - 术语表: appendix/apx_f_glossary.md
+    - A.数学基础: appendix/apx_a_math.md
+    - B.手写神经网络: appendix/apx_b_neural_net.md
+    - C.手写Transformer: appendix/apx_c_transformer.md
+    - D.论文索引: appendix/apx_d_papers.md
+    - E.大事记年表: appendix/apx_e_timeline.md
+    - F.术语表: appendix/apx_f_glossary.md
   - 配图:
     - 技术演进时间线: assets/diagrams/timeline.md
     - 架构演进图: assets/diagrams/architecture_evolution.md
