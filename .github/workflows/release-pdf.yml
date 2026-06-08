@@ -1,0 +1,54 @@
+name: Build and Release PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - chapters/**
+      - appendix/**
+      - README.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-lang-chinese fonts-noto-cjk
+      - name: Combine markdown files
+        run: |
+          echo "---" > combined.md
+          echo "title: AI History" >> combined.md
+          echo "author: matehubnet" >> combined.md
+          echo "lang: zh-CN" >> combined.md
+          echo "---" >> combined.md
+          for i in $(seq -w 1 21); do
+            echo "" >> combined.md
+            cat chapters/ch${i}.md >> combined.md
+          done
+          for f in appendix/apx_*.md; do
+            echo "" >> combined.md
+            cat ${f} >> combined.md
+          done
+      - name: Generate PDF
+        run: |
+          pandoc combined.md -o AI-History.pdf --pdf-engine=xelatex -V mainfont="Noto Sans CJK SC" -V monofont="Noto Sans Mono CJK SC" -V geometry:margin=2.5cm -V fontsize=11pt --toc --toc-depth=3 --highlight-style=tango
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: vlatest
+          name: "AI History Latest Build"
+          body: "Auto-built release. PDF available in Assets below."
+          files: AI-History.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
