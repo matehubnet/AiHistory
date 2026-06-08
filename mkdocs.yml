@@ -1,0 +1,125 @@
+site_name: AI简史：从感知机到大模型
+site_description: 一本写给技术人的AI通史，从1943年M-P神经元到2026年大模型时代
+site_url: https://matehubnet.github.io/AiHistory/
+site_author: matehubnet
+
+repo_name: matehubnet/AiHistory
+repo_url: https://github.com/matehubnet/AiHistory
+
+copyright: CC BY 4.0
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  font: false
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/matehubnet/AiHistory
+  analytics:
+    feedback:
+      title: 这篇文章有帮助吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 有帮助
+          data: 1
+          note: 感谢反馈！
+        - icon: material/thumb-down-outline
+          name: 没帮助
+          data: 0
+          note: 感谢反馈，我们会持续改进。
+
+nav:
+  - 首页: index.md
+  - 第一部分·萌芽:
+    - ch01: chapters/ch01.md
+    - ch02: chapters/ch02.md
+    - ch03: chapters/ch03.md
+  - 第二部分·数据与统计:
+    - ch04: chapters/ch04.md
+    - ch05: chapters/ch05.md
+    - ch06: chapters/ch06.md
+  - 第三部分·深度学习爆发:
+    - ch07: chapters/ch07.md
+    - ch08: chapters/ch08.md
+    - ch09: chapters/ch09.md
+    - ch10: chapters/ch10.md
+  - 第四部分·Transformer与大模型:
+    - ch11: chapters/ch11.md
+    - ch12: chapters/ch12.md
+    - ch13: chapters/ch13.md
+    - ch14: chapters/ch14.md
+  - 第五部分·大模型爆发与AGI:
+    - ch15: chapters/ch15.md
+    - ch16: chapters/ch16.md
+    - ch17: chapters/ch17.md
+    - ch18: chapters/ch18.md
+  - 第六部分·展望:
+    - ch19: chapters/ch19.md
+    - ch20: chapters/ch20.md
+    - ch21: chapters/ch21.md
+  - 附录:
+    - 数学基础: appendix/apx_a_math.md
+    - 手写神经网络: appendix/apx_b_neural_net.md
+    - 手写Transformer: appendix/apx_c_transformer.md
+    - 论文索引: appendix/apx_d_papers.md
+    - 大事记年表: appendix/apx_e_timeline.md
+    - 术语表: appendix/apx_f_glossary.md
+  - 配图:
+    - 技术演进时间线: assets/diagrams/timeline.md
+    - 架构演进图: assets/diagrams/architecture_evolution.md
+    - 三次浪潮: assets/diagrams/three_waves.md
+    - 训练流水线: assets/diagrams/training_pipeline.md
+    - BERT vs GPT: assets/diagrams/two_routes.md

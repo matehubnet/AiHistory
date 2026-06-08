@@ -8,6 +8,7 @@ __pycache__/
 output/
 dist/
 build/
+site/
 *.pdf
 *.epub
 *.mobi

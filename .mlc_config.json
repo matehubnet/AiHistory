@@ -1,0 +1,14 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https://github.com/matehubnet/AiHistory" },
+    { "pattern": "^https://matehubnet.github.io" },
+    { "pattern": "^https://star-history.com" },
+    { "pattern": "^https://api.star-history.com" }
+  ],
+  "replacementPatterns": [],
+  "httpHeaders": [],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s"
+}

@@ -1,33 +1,42 @@
+<div align="center">
+
+<img src="assets/images/banner.svg" alt="AI简史：从感知机到大模型" width="100%">
+
 # AI简史：从感知机到大模型
-# AI History: From Perceptron to Large Language Models
+## AI History: From Perceptron to Large Language Models
+
+**一本写给技术人的AI通史 | A Comprehensive AI History for Technical Professionals**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![GitHub stars](https://img.shields.io/github/stars/matehubnet/AiHistory.svg?style=social)](https://github.com/matehubnet/AiHistory/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/matehubnet/AiHistory.svg?style=social)](https://github.com/matehubnet/AiHistory/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/matehubnet/AiHistory.svg)](https://github.com/matehubnet/AiHistory/issues)
 
-**一本写给技术人的AI通史 | A Comprehensive AI History for Technical Professionals**
+</div>
 
-通过技术演进的历史脉络，系统构建AI知识体系。从1943年M-P神经元到2026年大模型时代，每个技术节点回答三个核心问题：**为什么出现 → 怎么工作 → 带来了什么/又卡在哪**。
-
-*Build a systematic understanding of AI through the lens of technological evolution. From the 1943 M-P neuron to the 2026 era of large models, each technical node answers three questions: **Why it emerged → How it works → What it enabled / Where it got stuck**.*
+> 通过技术演进的历史脉络，系统构建AI知识体系。从1943年M-P神经元到2026年大模型时代，每个技术节点回答三个核心问题：**为什么出现 → 怎么工作 → 带来了什么/又卡在哪**。
+>
+> *Build a systematic understanding of AI through the lens of technological evolution. From the 1943 M-P neuron to the 2026 era of large models, each technical node answers three questions: **Why it emerged → How it works → What it enabled / Where it got stuck**.*
 
 ---
 
-## 这本书适合谁 | Who Is This For
+## 亮点 | Highlights
+
+| | |
+|:---|:---|
+| 📖 **21章完整覆盖** | 从1943年M-P神经元到2026年世界模型，七十年AI发展一网打尽 |
+| 🔬 **代码+数学双轨** | 附录包含从零手写神经网络（NumPy）和Transformer（PyTorch）的完整代码 |
+| 🆕 **2026年最新内容** | DeepSeek-R1、o3、GPT-5、Claude Mythos、Cosmos 3等前沿突破 |
+| 🌐 **中英双语定位** | 中文正文 + 英文框架，面向全球技术人 |
+| 🆓 **CC BY 4.0** | 免费阅读、分享、改编，只需署名 |
+
+---
+
+## 适合谁 | Who Is This For
 
 **中文读者**：有技术功底但对AI领域空白的架构师/工程师。不需要AI基础，但需要编程和数学的基本功。
 
 **English Readers**: Technical architects/engineers with solid programming skills but new to AI. No AI background required, but basic math and coding proficiency expected.
-
----
-
-## 核心特色 | Key Features
-
-- **时间线+技术双线交织**：每个时代的技术突破都放在历史背景中理解
-- **前因后果完整追溯**：新技术为什么出现？解决了什么问题？又带来了什么新问题？
-- **代码+数学双轨并行**：附录包含从零实现神经网络和Transformer的完整代码
-- **2026年最新内容**：涵盖DeepSeek-R1、o3、GPT-5、Claude Mythos等最新进展
 
 ---
 
@@ -97,16 +106,17 @@
 
 ---
 
-## 快速开始 | Quick Start
+## 在线阅读 | Read Online
 
-`ash
-# Clone the repository
+🌍 **[在线阅读站（GitHub Pages）](https://matehubnet.github.io/AiHistory/)** — 全文搜索、目录导航、深色模式
+
+或在本地阅读：
+
+```bash
 git clone https://github.com/matehubnet/AiHistory.git
-
-# Start reading
 cd AiHistory
 # Begin with chapters/ch01.md
-`
+```
 
 ---
 
@@ -130,14 +140,22 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 
 如果这本书对你有帮助，欢迎：
 
-- Star ⭐ 这个仓库
-- 分享给你的技术圈子
-- 在掘金、知乎、V2EX等社区推荐
-- 提交到相关的 Awesome 列表
+- ⭐ Star 这个仓库
+- 📤 分享给你的技术圈子
+- 📝 在掘金、知乎、V2EX等社区推荐
+- 📋 提交到相关的 Awesome 列表
+- 🐦 在 Twitter/X 上推荐
 
 If this book helped you, please:
 
-- Star ⭐ this repository
-- Share with your tech community
-- Recommend on Hacker News, Reddit, LinkedIn
-- Submit to relevant Awesome lists
+- ⭐ Star this repository
+- 📤 Share with your tech community
+- 📝 Recommend on Hacker News, Reddit, LinkedIn
+- 📋 Submit to relevant Awesome lists
+- 🐦 Share on Twitter/X
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=matehubnet/AiHistory&type=Date)](https://star-history.com/#matehubnet/AiHistory&Date)
